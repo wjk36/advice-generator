@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+html {
+    --accent-color: hsl(150, 100%, 66%);
+    --main-color: hsl(218, 23%, 16%);
+    --advice-color: hsl(217, 19%, 24%);
+    font-family: 'Manrope', sans-serif;
+}
+
+#generate {
+    background-color: var(--accent-color);
+    padding: 1rem;
+    border-radius: 3rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: auto;
+    position: relative;
+    top: 80px;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+.container {
+    position: relative;
+}
+
+.advice {
+    background-color: var(--advice-color);
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.advice_id {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.advice_text {
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+
+}
+
+#divider-dsktp {
+    margin-top: 3rem;
+}
+
+#divider-mobile {
+   visibility: hidden;
+   position: absolute;
+}
+
+.attribution {
+    color: hsl(193, 38%, 86%);
+    position:fixed;
+    bottom:5px;
+    height:20px;
+    width: 100%;
+    margin: auto;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: hsl(150, 100%, 90%);
+}
+
+@media(max-width: 479px) {
+    .advice {
+        background-color: var(--advice-color);
+        width: 60vw;
+        margin: auto;
+        text-align: center;
+        border-radius: 1rem;
+        padding: 3rem;
+        margin: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+    }
+
+    #divider-mobile {
+        margin-top: 3rem;
+        visibility: visible;
+        position: relative;
+        right: 6vw;
+        width: 75vw;
+    }
+
+    #divider-dsktp {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .attribution {
+    color: hsl(193, 38%, 86%);
+    position:fixed;
+    height:10px;
+    width: 100%;
+    margin: auto;
+    font-size: 10px;
+}
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="app.js"></script>
+  <title>Advice generator app</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body onload="getAdvice()">
+  <div class="container">
+    <div class="advice">
+      <div class="advice_id">
+        Advice #
+        <!-- Advice ID goes here -->
+        <span id="advice_id"></span>
+      </div>
+      <div class="advice_text">
+        <br> "
+        <span id="advice_text"></span>
+        <!-- Advice text goes here -->"
+      </div>
+      <img id="divider-mobile" src="images/pattern-divider-mobile.svg" alt="">
+      <img id="divider-dsktp" src="images/pattern-divider-desktop.svg" alt="">
+      <div id="generate">
+        <img src="images/icon-dice.svg" alt="generate advice" srcset="" style="cursor: pointer;" onclick="getAdvice()">
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> | Coded by
+    <a href="https://github.com/wjk36">Will Kraft</a>
+  </div>
+</body>
+
+</html>
